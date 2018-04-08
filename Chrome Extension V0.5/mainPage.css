@@ -1,0 +1,12 @@
+h1 {
+text-align: center;
+}
+
+input {
+  display: inline;
+ }
+
+ div.profileBtn{
+   display: block;
+   text-align: center;
+ }
