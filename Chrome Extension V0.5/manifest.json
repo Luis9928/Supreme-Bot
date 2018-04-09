@@ -1,6 +1,6 @@
   {
     "name": "El Bean Bot",
-    "version": "0.5",
+    "version": "0.6",
     "description": "Bot",
 	"background":{
 		"scripts": ["background.js"],

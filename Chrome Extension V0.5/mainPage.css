@@ -1,12 +1,79 @@
 h1 {
 text-align: center;
+background-color: red;
+color: white; /* SET COLOR IN WHITE */
+border: 150px 150px 150px 150px;
+border: 1px outset #000000;
 }
 
 input {
   display: inline;
+
  }
 
  div.profileBtn{
    display: block;
    text-align: center;
  }
+
+ #profile
+{
+  width: 60px;
+  height: 30px;
+  background-color: red;
+  color: white; /* SET COLOR IN WHITE */
+  border-radius: 150px 150px 150px 150px;
+  border: 1px outset #000000;
+}
+
+#profile:hover
+{
+  background-color: white;
+  color: black; /* SET COLOR IN BLACK */
+}
+
+body{
+background: -webkit-linear-gradient(45deg, rgba(255,3,3,1) 0%,
+                                           rgba(168,14,14,1) 68%,
+                                           rgba(128,20,20,1) 100%); /* safari5.1+,chrome10+ */
+}
+
+form {
+  color : black;
+  text-align: center;
+}
+
+#itemInfo
+{
+ width: 75px;
+ height: 30px;
+ background-color: red;
+ color: white; /* SET COLOR IN WHITE */
+ border-radius: 150px 150px 150px 150px;
+ border: 1px outset #000000;
+ margin-left: 25px;
+}
+
+#itemInfo:hover
+{
+ background-color: white;
+ color: black; /* SET COLOR IN BLACK */
+}
+
+#cop
+{
+ width: 75px;
+ height: 30px;
+ background-color: red;
+ color: white; /* SET COLOR IN WHITE */
+ border-radius: 150px 150px 150px 150px;
+ border: 1px outset #000000;
+ margin-left: 25px;
+ margin-top: 20px;
+}
+
+#cop:hover
+{
+ background-color: white;
+ color: black; /* SET COLOR IN BLACK */
+}
