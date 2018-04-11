@@ -1,7 +1,10 @@
 if (window.location.href == "https://www.supremenewyork.com/checkout"){
 	//alert("You're in checkout Page. Delay of 1 second");
+
+	// Sets the delay for the form autofill
 	var delay = 500;
 
+	// Fill out the billing and address form
 	setTimeout(function(){
 
 		chrome.storage.sync.get('name', function(r) {
@@ -68,12 +71,11 @@ if (window.location.href == "https://www.supremenewyork.com/checkout"){
 	$("input[name*='order[terms]']").trigger('click');
 	}, delay);
 
-	var delayCheck = 1000;
+	// Sets the delay for the checkout button click
+	var delayCheck = 2000;
 
+	// Click checkout button
 	setTimeout(function(){
 	$("input.button").trigger('click');
-}, delayCheck);
-
-
-
+	}, delayCheck);
 }
