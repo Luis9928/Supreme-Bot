@@ -1,12 +1,14 @@
 if (window.location.href == "https://www.supremenewyork.com/checkout"){
 	//alert("You're in checkout Page. Delay of 1 second");
-	var delay = 500;
 
+	// Sets the delay for the form autofill
+	var delay = 350;
+
+	// Fill out the billing and address form
 	setTimeout(function(){
 
 		chrome.storage.sync.get('name', function(r) {
 			var name = r['name'];
-			console.log(name);
 			$('#order_billing_name').val(name);
 		});
 
@@ -47,17 +49,18 @@ if (window.location.href == "https://www.supremenewyork.com/checkout"){
 
 		chrome.storage.sync.get('state', function(r) {
 			var state = r['state'];
-			$('select[name="order[billing_state]"]').find('option:contains(state)').attr("selected",true);
+			console.log(state)
+			$("#order_billing_state").val(state);
 		});
 
 		chrome.storage.sync.get('cardMonth', function(r) {
 			var month = r['cardMonth'];
-			$('select[name="credit_card[month]"]').find('option:contains(month)').attr("selected",true);
+			$("#credit_card_month").val(month);
 		});
 
 		chrome.storage.sync.get('cardYear', function(r) {
 			var year = r['cardYear'];
-			$('select[name="credit_card[year]"]').find('option:contains(year)').attr("selected",true);
+			$("#credit_card_year").val(year);
 		});
 
 		chrome.storage.sync.get('csv', function(r) {
@@ -68,12 +71,11 @@ if (window.location.href == "https://www.supremenewyork.com/checkout"){
 	$("input[name*='order[terms]']").trigger('click');
 	}, delay);
 
-	var delayCheck = 1000;
+	// Sets the delay for the checkout button click
+	var delayCheck = 2000;
 
+	// Click checkout button
 	setTimeout(function(){
 	$("input.button").trigger('click');
-}, delayCheck);
-
-
-
+	}, delayCheck);
 }
