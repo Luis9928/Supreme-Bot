@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Stores the category on Chrome's local storage to be used on another script
       chrome.storage.sync.set({categoryPath: categoryValue}, function() {
-        console.log('Category saved');
+        console.log('Category Path saved');
       });
 
 
@@ -83,9 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
     else {
       console.log('Category Failed');
     }
-
-
-
-
+	
 	});
 });
