@@ -3,6 +3,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="mainPage.css">
 		<script src="../forms/userInfo.js"></script>
+		<script src="../forms/clearItem.js"></script>
+		<script src="../forms/print.js"></script>
 		<script src="jquery-3.3.1.min.js"></script>
 
 
@@ -17,16 +19,16 @@
 
 		<!-- User Info Form -->
 		<form>
-		  Name:  <input id="name" type="text" value="" placeholder="Name">
-			Email: <input id="email" type="text" value="" placeholder="Email">
-			Phone Number:	<input id="phone" type="text"  value="" placeholder="Phone Number">
-			Address: <input id="address" type="text" value="" placeholder="Address">
-			Apt: <input id="apt" type="text" value="" placeholder="Apt">
-			<br><br><br>
+		  Name:  <input id="name" type="text" value="" placeholder="Name"/>
+			Email: <input id="email" type="text" value="" placeholder="Email"/>
+			Phone Number:	<input id="phone" type="text"  value="" placeholder="Phone Number"/>
+			Address: <input id="address" type="text" value="" placeholder="Address"/>
+			Apt: <input id="apt" type="text" value="" placeholder="Apt"/>
+			<br><br></br></br>
 
-			Zip:	<input id= "zip" type="text" value="" placeholder="Zip">
-			City:	<input id= "city" type="text" value="" placeholder="City">
-			Card Number: <input id="cardNumber" type="text" value="" placeholder="Credit Card">
+			Zip:	<input id= "zip" type="text" value="" placeholder="Zip"/>
+			City:	<input id= "city" type="text" value="" placeholder="City"/>
+			Card Number: <input id="cardNumber" type="text" value="" placeholder="Credit Card"/>
 			State:
 			<!-- State Drop Down -->
 			<select id="state">
@@ -125,12 +127,15 @@
 		</select>
 
 		<!-- Card CSV text box -->
-		Card CSV: <input id="cardCSV" type="text" value="" placeholder="CSV">
+		Card CSV: <input id="cardCSV" type="text" value="" placeholder="CSV"/>
 			<br><br><br><br><br>
 
-		  <input id="customerInfo" type="submit" value="Save Info">
+		  <input id="customerInfo" type="submit" value="Save Info"/>
 		</form><br><br><br>
 		<!-- End of User Info Form -->
+		<input id="contentClear" type="submit" value="Clear User Info"/> 
+		<input id="test" type="submit" value="Print to console"/> 
+
 
 
 

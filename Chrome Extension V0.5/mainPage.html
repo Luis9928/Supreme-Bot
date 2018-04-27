@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="mainPage.css">
@@ -6,6 +6,8 @@
 		<script src="../forms/itemInfo.js"></script>
 		<script src="../forms/category.js"></script>
 		<script src="jquery-3.3.1.min.js"></script>
+		<script src="../forms/clearItem.js"></script>
+		<script src="../forms/print.js"></script>
 		<h1> SP Bot </h1>
 	</head>
 
@@ -14,27 +16,27 @@
 <div class = "profileBtn">
 		<form  action="form.html">
 			<input id="profile" type="submit" value="Profile" />
-		</form><br><br><br>
+		</form><br><br><br></br></br></br>
 </div>
 
 <!-- User info form -->
 <div style="margin-right: 20px;">
-		<form onsubmit="this.submit(); this.reset(); return false;">
-
+		<form>
+		
+		<div>
+			<span style=" margin-right: 3px; margin-left: 2px;"><b>Item:<b/></span>
+				<input id="item" type="text" value="" placeholder="Item"/>
+		</div><br></br></br></br>
+		
 		<div>
 		  <span style=" margin-right: 2px;"><b>Color:</b></span>
 			<input id="color" type="text"  value="" placeholder="Color"/>
 		</div>
 		<div>
-			<span><b> Write "NO COLOR" if there is no color on item <span></b>
+			<span><b> Write "NO COLOR" if there is no color on item </span></b>
 		</div>
-		<br>
-
-		<div>
-			<span style=" margin-right: 3px; margin-left: 2px;"><b>Item:<b/></span>
-				<input id="item" type="text" value="" placeholder="Item"/>
-		</div><br>
-
+		<br></br>
+		
 			<!-- Category Drop down -->
 			<div style="margin-right: 20px;">
 			<span style="margin-left: 2px; margin-right: 2px; "><b>Category:</b></span>
@@ -49,7 +51,7 @@
 				<option value="accessories">accessories</option>
 				<option value="skate">skate</option>
 			</select>
-			<br><br>
+			<br><br></br></br>
 		</div>
 
 
@@ -61,15 +63,19 @@
 				<option value="Medium">Medium</option>
 				<option value="Large">Large</option>
 				<option value="XLarge">XLarge</option>
-			</select><br><br>
+			</select><br><br></br></br>
 		</div>
 
 		  <input id="itemInfo" type="submit" value="Save Item"/>
 		</form>
-		<div/>
+		<div>
 		<!-- End of User info form -->
 
 		<button id="cop"> COP </button>
+		</div>
+		<input id="contentClear" type="submit" value="Clear User Info"/> 
+		<input id="test" type="submit" value="Print to console"/> 
+		</div>
 
 
 	</body>
