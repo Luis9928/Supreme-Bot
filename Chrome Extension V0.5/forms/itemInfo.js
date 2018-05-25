@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // onClick's logic below:
     link.addEventListener('click', function() {
 
+      $(".row").children().each(function(){
+
+        if (this.value != "null"){
+        console.log(this.value);
+      }
+      });
+/*
       // Get's the value from the text boxes
       var sizeValue = $('#size').val();
       var colorValue = document.getElementById("color").value;
@@ -21,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
       chrome.storage.sync.set({size: sizeValue}, function() {
         console.log('Size saved');
       });
+
+      chrome.storage.sync.set({itemInfo: sizeValue}, function() {
+        console.log('Size saved');
+      });
+
+      */
 
 	});
 });

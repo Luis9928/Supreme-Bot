@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var link = document.getElementById('test');
     // onClick's logic below:
     link.addEventListener('click', function() {
-	
+
 	chrome.storage.sync.get('name', function(r) {
 			var name = r['name'];
 			console.log(name)
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		chrome.storage.sync.get('cardNumber', function(r) {
 			var card = r['cardNumber'];
-			console.log(state)
+			console.log(card)
 		});
 
 		chrome.storage.sync.get('state', function(r) {
@@ -63,31 +63,34 @@ document.addEventListener('DOMContentLoaded', function() {
 			var csv = r['csv'];
 			console.log(csv)
 		});
-		
+
 		chrome.storage.sync.get('item', function(r) {
 			var userItem = r['item'];
 			console.log(userItem);
 
 		});
-			
+
 		chrome.storage.sync.get('color', function(r) {
 			var userColor = r['color'];
 			console.log(userColor);
 
 		});
-		
+
 		chrome.storage.sync.get('category', function(r) {
 			var category = r['category'];
 			console.log(category);
 		});
-		
+
 		chrome.storage.sync.get('size', function(r) {
-			var size = r['size']; 
+			var size = r['size'];
 			console.log(size);
 		});
-		
+
+    chrome.storage.sync.get('categoryPath', function(r) {
+      var size = r['categoryPath'];
+      console.log(size);
+    });
+
 
 });
 });
-
-	  	
