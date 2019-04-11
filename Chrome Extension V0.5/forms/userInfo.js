@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('State saved');
       });
 
-
       chrome.storage.sync.set({cardMonth: monthValue}, function() {
         console.log('Month saved');
       });

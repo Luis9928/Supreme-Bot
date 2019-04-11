@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var bagsUrl ="http://www.supremenewyork.com/shop/all/bags";
       var accsUrl ="http://www.supremenewyork.com/shop/all/accessories";
       var skateUrl ="http://www.supremenewyork.com/shop/all/skate"
+      var tshirtsUrl ="http://www.supremenewyork.com/shop/all/t-shirts"
 
       // Stores the category on Chrome's local storage to be used on another script
       chrome.storage.sync.set({categoryPath: categoryValue}, function() {
@@ -76,6 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     else if (categoryValue == "skate") {
       chrome.storage.sync.set({category: skateUrl}, function() {
+        console.log('Category saved');
+      });
+    }
+    else if (categoryValue == "t-shirts") {
+      chrome.storage.sync.set({category: tshirtsUrl}, function() {
         console.log('Category saved');
       });
     }
